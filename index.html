@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Miami soccer time</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <link href="css/codiqa.ext.min.css" rel="stylesheet">
+  <link href="css/jquery.mobile.theme-1.3.1.min.css" rel="stylesheet">
+  <link href="css/final.css" rel="stylesheet">
+  <link href="css/jquery.mobile.structure-1.3.1.min.css" rel="stylesheet">
+  <link href="css/miami-soccer-time.css" rel="stylesheet">
+
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="js/jquery.mobile-1.3.1.min.js"></script>
+  <script src="js/codiqa.ext.min.js"></script>
+  <script src="https://cdn.firebase.com/js/client/1.0.2/firebase.js"></script>
+  <script src="js/miami-soccer-time.js"></script>
+</head>
+<body>
+  <div data-role="page" data-control-title="Home" data-theme="a" id="page1">
+      <div data-theme="a" data-role="header">
+          <h3>
+              Miami Soccer Time
+          </h3>
+      </div>
+      <div data-role="content">
+          <div style="" data-controltype="image">
+              <img style="width: 300px; height: 300px" src="img/logo.png">
+          </div>
+          <div data-role="fieldcontain" data-controltype="textinput">
+              <label for="textinput5">
+                  e-mail
+              </label>
+              <input name="" id="textinput5" placeholder="" value="" type="text">
+          </div>
+          <div data-role="fieldcontain" data-controltype="textinput">
+              <label for="textinput6">
+                  password
+              </label>
+              <input name="" id="textinput6" placeholder="" value="" type="text">
+          </div>
+          <div class="ui-grid-a">
+              <div class="ui-block-a">
+                  <a data-role="button" target="_blank" data-theme="a" href="#page7">
+                      Find match
+                  </a>
+              </div>
+              <div class="ui-block-b">
+                  <a data-role="button" href="#page9">
+                      Create
+                  </a>
+              </div>
+          </div>
+          <div data-controltype="textblock">
+              <p style="text-align: center;">
+                  <b>
+                      OR
+                  </b>
+              </p>
+          </div>
+          <div>
+              <a href="#page8" data-transition="fade">
+                  sign up
+              </a>
+          </div>
+      </div>
+      <div data-role="tabbar" data-iconpos="top" data-theme="a">
+          <ul>
+              <li>
+                  <a href="#page1" data-transition="fade" data-theme="" data-icon="home">
+                      Home
+                  </a>
+              </li>
+              <li>
+                  <a href="#page3" data-transition="fade" data-theme="" data-icon="star">
+                      Fileds
+                  </a>
+              </li>
+              <li>
+                  <a href="#page2" data-transition="fade" data-theme="" data-icon="info">
+                      About
+                  </a>
+              </li>
+          </ul>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="sign up" data-theme="a" id="page8">
+      <div data-theme="a" data-role="header">
+          <h3>
+              Miami Soccer Time
+          </h3>
+      </div>
+      <div data-role="content">
+          <div data-controltype="textblock">
+              <p style="text-align: center;" data-mce-style="text-align: center;">
+                  <strong>
+                      Sign up
+                  </strong>
+                  <br>
+              </p>
+          </div>
+          <div data-role="fieldcontain" data-controltype="textinput">
+              <label for="textinput1">
+                  First name
+              </label>
+              <input name="" id="textinput1" placeholder="" value="" type="text">
+          </div>
+          <div data-role="fieldcontain" data-controltype="textinput">
+              <label for="textinput3">
+                  last name
+              </label>
+              <input name="" id="textinput3" placeholder="" value="" type="text">
+          </div>
+          <div data-role="fieldcontain" data-controltype="textinput">
+              <label for="textinput4">
+                  e-mail
+              </label>
+              <input name="" id="textinput4" placeholder="" value="" type="text">
+          </div>
+          <div data-role="fieldcontain" data-controltype="textinput">
+              <label for="textinput7">
+                  password
+              </label>
+              <input name="" id="textinput7" placeholder="" value="" type="text">
+          </div>
+          <a data-role="button" target="_blank" data-theme="a" href="#page1">
+              sign up
+          </a>
+      </div>
+      <div data-role="tabbar" data-iconpos="top" data-theme="a">
+          <ul>
+              <li>
+                  <a href="#page1" data-transition="fade" data-theme="" data-icon="home">
+                      Home
+                  </a>
+              </li>
+              <li>
+                  <a href="#page3" data-transition="fade" data-theme="" data-icon="star">
+                      Filed
+                  </a>
+              </li>
+              <li>
+                  <a href="#page2" data-transition="fade" data-theme="" data-icon="info">
+                      About
+                  </a>
+              </li>
+          </ul>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="field" data-theme="a" id="page3">
+      <div data-theme="a" data-role="header">
+          <h3>
+              Fields
+          </h3>
+      </div>
+      <div data-role="content">
+          <div style="" data-controltype="image">
+              <img style="width: 288px; height: 250px" src="http://wallmatic.com/wp-content/uploads/2013/12/Abstrac-Soccer-Wallpaper.jpg">
+          </div>
+          <a data-role="button" href="#page7">
+              Soccer Roof Top
+          </a>
+      </div>
+      <div data-role="tabbar" data-iconpos="top" data-theme="a">
+          <ul>
+              <li>
+                  <a href="#page1" data-transition="fade" data-theme="" data-icon="home">
+                      Home
+                  </a>
+              </li>
+              <li>
+                  <a href="#page3" data-transition="fade" data-theme="" data-icon="star">
+                      Fileds
+                  </a>
+              </li>
+              <li>
+                  <a href="#page2" data-transition="fade" data-theme="" data-icon="info">
+                      About
+                  </a>
+              </li>
+          </ul>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="about" data-theme="a" id="page2">
+      <div data-theme="a" data-role="header">
+          <h3>
+              About
+          </h3>
+      </div>
+      <div data-role="content">
+          <div data-controltype="htmlblock">
+              <a class="twitter-timeline" href="https://twitter.com/RedwanHafiz" data-widget-id="426530366527000576">
+                  Tweets by @RedwanHafiz
+              </a>
+              <script>
+              !
+  function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+          p = /^http:/.test(d.location) ? 'http' : 'https';
+      if (!d.getElementById(id)) {
+          js = d.createElement(s);
+          js.id = id;
+          js.src = p + "://platform.twitter.com/widgets.js";
+          fjs.parentNode.insertBefore(js, fjs);
+      }
+  }(document, "script", "twitter-wjs");
+              </script>
+          </div>
+      </div>
+      <div data-role="tabbar" data-iconpos="top" data-theme="a">
+          <ul>
+              <li>
+                  <a href="#page1" data-transition="fade" data-theme="" data-icon="home">
+                      Home
+                  </a>
+              </li>
+              <li>
+                  <a href="#page3" data-transition="fade" data-theme="" data-icon="star">
+                      Fileds
+                  </a>
+              </li>
+              <li>
+                  <a href="#page2" data-transition="fade" data-theme="" data-icon="info">
+                      About
+                  </a>
+              </li>
+          </ul>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="Soccer Roof Top" data-theme="a"
+  id="page5">
+      <div data-theme="a" data-role="header">
+          <h3>
+              Soccer Roof Top
+          </h3>
+      </div>
+      <div data-role="content">
+          <div data-controltype="textblock">
+              <p>
+                  <strong>
+                      Soccer Roof Top
+                  </strong>
+              </p>
+              <p>
+                  444 Brickell Ave 2nd floor
+              </p>
+              <p>
+                  Miami, FL 33131
+              </p>
+              <p>
+                  <span>
+                      Telephone:&nbsp;
+                      <span>
+                          305-967-3512
+                      </span>
+                      <br>
+                  </span>
+              </p>
+          </div>
+          <div id="googlemapsjs6" class="google-map" style="width: 288px; height: 200px; margin-left: auto; margin-right: auto">
+          </div>
+          <script type="text/javascript">
+                  window.CodiqaControls && window.CodiqaControls.register('googlemaps', 'googlemapsjs6', {
+              ready: function(control) {
+  
+                  control.options = {
+                      zoom: 14,
+                      mapTypeId: google.maps.MapTypeId.ROADMAP
+                  };
+  
+                  control.el = document.getElementById(control._id);
+                  control.map = new google.maps.Map(control.el, control.options);
+  
+                  var geocoder = new google.maps.Geocoder();
+                  geocoder.geocode({
+                      'address': 'miami'
+                  }, function(results, status) {
+                      if (status == google.maps.GeocoderStatus.OK) {
+  
+                          var marker = new google.maps.Marker({
+                              map: control.map,
+                              position: results[0].geometry.location
+                          });
+                          control.center = results[0].geometry.location;
+                          control.map.setCenter(control.center);
+                      }
+                  });
+  
+              }
+          });
+          </script>
+          <a data-role="button" href="#page7">
+              Play match
+          </a>
+      </div>
+      <div data-role="tabbar" data-iconpos="top" data-theme="a">
+          <ul>
+              <li>
+                  <a href="#page1" data-transition="fade" data-theme="" data-icon="home">
+                      Home
+                  </a>
+              </li>
+              <li>
+                  <a href="#page3" data-transition="fade" data-theme="" data-icon="star">
+                      Fileds
+                  </a>
+              </li>
+              <li>
+                  <a href="#page2" data-transition="fade" data-theme="" data-icon="info">
+                      About
+                  </a>
+              </li>
+          </ul>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="Soccer Roof top matches" data-theme="a"
+  id="page7">
+      <div data-theme="a" data-role="header">
+          <h3>
+              Soccer Roof Top
+          </h3>
+      </div>
+      <div data-role="content">
+          <div data-controltype="textblock">
+              <p style="text-align: center;" data-mce-style="text-align: center;">
+                  <strong>
+                      Today Matches
+                  </strong>
+                  <br>
+              </p>
+              <p>
+                  <br>
+              </p>
+          </div>
+          <ul data-role="listview" data-divider-theme="a" data-inset="true" id="matches">
+              <li data-role="list-divider" role="heading">
+                  Matches
+              </li>
+              <li data-theme="a">
+                  <a href="#page1" data-transition="slide">
+                      Match1
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page1" data-transition="slide">
+                      Match2
+                  </a>
+              </li>
+          </ul>
+          <input type="submit" value="Submit">
+      </div>
+      <div data-role="tabbar" data-iconpos="top" data-theme="a">
+          <ul>
+              <li>
+                  <a href="#page1" data-transition="fade" data-theme="" data-icon="home">
+                      Home
+                  </a>
+              </li>
+              <li>
+                  <a href="#page3" data-transition="fade" data-theme="" data-icon="star">
+                      Fileds
+                  </a>
+              </li>
+              <li>
+                  <a href="#page2" data-transition="fade" data-theme="" data-icon="info">
+                      About
+                  </a>
+              </li>
+          </ul>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="create match" data-theme="a"
+  id="page9">
+      <div data-theme="a" data-role="header">
+          <h3>
+              Soccer Roof Top
+          </h3>
+      </div>
+      <div data-role="content">
+          <div data-controltype="textblock">
+              <p style="text-align: center;" data-mce-style="text-align: center;">
+                  <b>
+                      Create Match
+                  </b>
+              </p>
+          </div>
+          <div data-role="fieldcontain" data-controltype="textinput">
+              <label for="title">
+                  Title
+              </label>
+              <input name="" id="title" placeholder="" value="" type="text">
+          </div>
+          <div data-role="date" data-controltype="dateinput">
+              <label for="date">
+                  Date
+              </label>
+              <input name="" id="date" placeholder="" value="" type="date">
+          </div>
+          <div data-role="time" data-controltype="textinput">
+              <label for="time">
+                  Time
+              </label>
+              <input name="" id="time" placeholder="" value="" type="text">
+          </div>
+          <input type="submit" value="Submit" id="submit">
+      </div>
+      
+      <div data-role="tabbar" data-iconpos="top" data-theme="a">
+          <ul>
+              <li>
+                  <a href="#page1" data-transition="fade" data-theme="" data-icon="home">
+                      Home
+                  </a>
+              </li>
+              <li>
+                  <a href="#page3" data-transition="fade" data-theme="" data-icon="star">
+                      Fileds
+                  </a>
+              </li>
+              <li>
+                  <a href="#page2" data-transition="fade" data-theme="" data-icon="info">
+                      About
+                  </a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</body>
+</html>
